@@ -1,0 +1,20 @@
+file=open("data.txt", "w")
+file.write("hello /n")
+file.write("vidit /n")
+file.close()
+print("data written successfully") 
+
+file=open("data.txt","r")
+content=file.read()
+print(content)
+file.close()
+
+file=open("data.txt","a")
+file.write("tennis is love /n")
+file.close()
+print("appended successfully")
+
+file=open("data.txt","r")
+new_content=file.read()
+print(new_content)
+file.close()
